@@ -8,7 +8,9 @@ class Vaccine(models.Model):
     interval = models.IntegerField(default=0, help_text="Please provide interval in days")
     storage_temperature = models.IntegerField(null=True, blank=True, help_text="Provide the temperature in Celcius")
     minimum_age = models.IntegerField(default=0)
-    
+
     def __str__(self):
-        return self.name  # 관리자화면에 Name을 리스트로 디스플레이한다.
-    
+        return self.name
+
+
+
